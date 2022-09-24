@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <section class="container">
+    <header class="container">
       <!-- Nav bar -->
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -56,40 +56,54 @@
       <!-- Nav -->
       <ul class="nav mt-2">
         <li class="nav-item">
-          <a
-            class="nav-link active me-3 text-black"
-            aria-current="page"
-            href="#"
-            >Home</a
+          <a id="breaking-news" class="nav-link me-4 text-black" href="#"
+            >Breaking-News</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link me-4 text-black" href="#">Breaking-News</a>
+          <a id="Regular-News" class="nav-link me-4 text-black" href="#"
+            >Regular-News</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link me-4 text-black" href="#">Regular-News</a>
+          <a id="International-News" class="nav-link me-4 text-black" href="#"
+            >International-News</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link me-4 text-black" href="#">International-News</a>
+          <a id="Sports" class="nav-link me-4 text-black" href="#">Sports</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-4 text-black" href="#">Sports</a>
+          <a id="Entertaintment" class="nav-link me-4 text-black" href="#"
+            >Entertaintment</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link me-4 text-black" href="#">Entertaintment</a>
+          <a id="Culture" class="nav-link me-4 text-black" href="#">Culture</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link me-4 text-black" href="#">Culture</a>
+          <a id="Arts" class="nav-link me-3 text-black">Arts</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black" href="#">All-News</a>
+          <a id="All-News" class="nav-link text-black">All-News</a>
         </li>
       </ul>
-    </section>
+    </header>
+    <main>
+      <!-- data length -->
+      <section class="container mt-3">
+        <h4 id="dataLength"></h4>
+      </section>
+      <section class="container mt-5">
+        <!-- card -->
+        <div id="newsCard" class="card mb-3" style="max-width: 1040px"></div>
+      </section>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
