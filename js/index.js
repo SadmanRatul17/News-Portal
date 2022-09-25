@@ -295,7 +295,7 @@ document.getElementById('International-News').addEventListener('click',function(
                       <img src="image/carbon_view.png" class="img-fluid" height: 30px" alt="view" />
                       <span class="h-5" >${data.total_view}</span>
                       </div>
-                      <div class= "ms-5">
+                      <div class= "ms-3">
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
                   Details
                 </button>
@@ -393,7 +393,7 @@ document.getElementById('Sports').addEventListener('click',function(){
                       <img src="image/carbon_view.png" class="img-fluid" height: 30px" alt="view" />
                       <span class="h-5" >${data.total_view}</span>
                       </div>
-                      <div class= "ms-5">
+                      <div class= "ms-3">
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
                       Details
                     </button>
@@ -489,7 +489,7 @@ document.getElementById('Entertaintment').addEventListener('click',function(){
                       <img src="image/carbon_view.png" class="img-fluid" height: 30px" alt="view" />
                       <span class="h-5" >${data.total_view}</span>
                       </div>
-                      <div class= "ms-5">
+                      <div class= "ms-3">
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
                       Details
                     </button>
@@ -771,7 +771,7 @@ document.getElementById('All-News').addEventListener('click',function(){
                       <img src="image/carbon_view.png" class="img-fluid" height: 30px" alt="view" />
                       <span class="h-5" >${data.total_view}</span>
                       </div>
-                      <div class= "ms-5">
+                      <div class= "ms-3">
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
                   Details
                 </button>
