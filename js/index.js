@@ -1,4 +1,4 @@
-//                     Breaking News
+                    // Breaking News
 
 document.getElementById('breaking-news').addEventListener('click',function(){
 // start spinner
@@ -70,23 +70,53 @@ function display (data) {
                   <span class="h-5" >${data.total_view}</span>
                   </div>
                   <div class= "ms-5">
-                  <img src="image/bi_arrow-right-short.png" class="img-fluid" height: 30px" alt="arrow" />
-                  </div></div>
-                 
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
+                  Details
+                </button>
                   </p>
              </div>
          </div>
         `;
       
       newsContainer.appendChild(newsCard);
+
+        
     }
     )
     // Stop Spinner
-    toggoleSpinner(false);
+      toggoleSpinner(false);
     }
- loadNews();  
+      loadNews();
+    });
+
+// modal
+// const ModalloadNews = async() => {
+//     const url = `https://openapi.programming-hero.com/api/news/categories`
+//     const res = await fetch(url);
+//     const data = await res.json();
+//     Modalnewses(data.data.news_category[0].category_id);  
+// }
+// function Modalnewses(breakingNews) {
+
+//     fetch(`https://openapi.programming-hero.com/api/news/category/${breakingNews}`)
+//         .then(response => response.json())
+//         .then(data =>  displayModal(data.data));       
+// }
+// function displayModal(data){
+//     console.log(data)
+//     data.forEach( data => {
+        
+//         console.log(data);
+//         const newsModalLabel= document.getElementById('newsModalLabel');
+//         console.log(newsModalLabel);
+//         newsModalLabel.innerText= data.title ;
+//     });
+// }
+
+
+// ModalloadNews();
  
-});
+
 
 // --------------------------------- Regular news----------------------------------- 
 
@@ -164,22 +194,32 @@ document.getElementById('Regular-News').addEventListener('click',function(){
                       <span class="h-5" >${data.total_view}</span>
                       </div>
                       <div class= "ms-5">
-                      <img src="image/bi_arrow-right-short.png" class="img-fluid" height: 30px" alt="arrow" />
-                      </div></div>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     Details
+                    </button>
+                      </div>
+                      </div>
                      
                       </p>
                  </div>
              </div>
+
+
             `;
-          
           newsContainer.appendChild(newsCard);
-        }
-        )
-        toggoleSpinner(false);
-        }
-     loadNews();   
-    
+       
+    }
+    )
+    // Stop Spinner
+      toggoleSpinner(false);
+    }
+      loadNews();
     });
+//    modal
+
+
+
+
 //-------------------------------------International News----------------------------
 
 
@@ -256,7 +296,9 @@ document.getElementById('International-News').addEventListener('click',function(
                       <span class="h-5" >${data.total_view}</span>
                       </div>
                       <div class= "ms-5">
-                      <img src="image/bi_arrow-right-short.png" class="img-fluid" height: 30px" alt="arrow" />
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
+                  Details
+                </button>
                       </div></div>
                      
                       </p>
@@ -352,7 +394,9 @@ document.getElementById('Sports').addEventListener('click',function(){
                       <span class="h-5" >${data.total_view}</span>
                       </div>
                       <div class= "ms-5">
-                      <img src="image/bi_arrow-right-short.png" class="img-fluid" height: 30px" alt="arrow" />
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
+                      Details
+                    </button>
                       </div></div>
                      
                       </p>
@@ -446,7 +490,9 @@ document.getElementById('Entertaintment').addEventListener('click',function(){
                       <span class="h-5" >${data.total_view}</span>
                       </div>
                       <div class= "ms-5">
-                      <img src="image/bi_arrow-right-short.png" class="img-fluid" height: 30px" alt="arrow" />
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
+                      Details
+                    </button>
                       </div></div>
                      
                       </p>
@@ -538,7 +584,9 @@ document.getElementById('Culture').addEventListener('click',function(){
                       <span class="h-5" >${data.total_view}</span>
                       </div>
                       <div class= "ms-5">
-                      <img src="image/bi_arrow-right-short.png" class="img-fluid" height: 30px" alt="arrow" />
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
+                      Details
+                    </button>
                       </div></div>
                      
                       </p>
@@ -630,7 +678,9 @@ document.getElementById('Arts').addEventListener('click',function(){
                       <span class="h-5" >${data.total_view}</span>
                       </div>
                       <div class= "ms-5">
-                      <img src="image/bi_arrow-right-short.png" class="img-fluid" height: 30px" alt="arrow" />
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
+                      Details
+                    </button>
                       </div></div>
                      
                       </p>
@@ -722,7 +772,9 @@ document.getElementById('All-News').addEventListener('click',function(){
                       <span class="h-5" >${data.total_view}</span>
                       </div>
                       <div class= "ms-5">
-                      <img src="image/bi_arrow-right-short.png" class="img-fluid" height: 30px" alt="arrow" />
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="modal" data-bs-target="#exampleModal">
+                  Details
+                </button>
                       </div></div>
                      
                       </p>
